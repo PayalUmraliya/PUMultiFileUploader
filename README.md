@@ -8,7 +8,7 @@ Introducing `PUMultiFileUploader`: For handling upload multiple files and for ev
 
 ## Notes
 
-In this demo you need to add upload api header data and upload api url to test the app.
+In this demo you need to add upload `api header` data and upload `api url` to test the app.
 
 ## License
 
