@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PFHandbookPro-Bold.ttf">
+            <string>PFHandbookPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilePickerVC" customModule="PUMultiFileUploader" customModuleProvider="target">
+            <connections>
+                <outlet property="lblCamera" destination="KCv-Ql-f65" id="MkB-sN-CF8"/>
+                <outlet property="lblFolder" destination="XmW-mI-Fos" id="XvT-NT-aOA"/>
+                <outlet property="lblGallery" destination="ILh-UL-ASH" id="xoD-Uc-5yg"/>
+                <outlet property="lblTitle" destination="kqX-zt-6Da" id="eFs-US-YXs"/>
+                <outlet property="stCamera" destination="aLA-4v-gLa" id="JWH-o8-OzR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBG" destination="5li-0t-Mwy" id="Me8-4s-DNx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-8O-jYi">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nQa-hd-28n">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mnw-V6-0fF">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="716"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g1L-8r-uCG">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="716"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="regular"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-ca-oIH">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="662"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="btnCloseCLK:" destination="-1" eventType="touchUpInside" id="d59-ht-dHv"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5li-0t-Mwy">
+                    <rect key="frame" x="0.0" y="662" width="390" height="182"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Image via" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqX-zt-6Da">
+                            <rect key="frame" x="20" y="10" width="350" height="30"/>
+                            <fontDescription key="fontDescription" name="PFHandbookPro-Bold" family="PF Handbook Pro" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-P0-rnh">
+                            <rect key="frame" x="20" y="50" width="350" height="78"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cfU-4J-6TG">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="78"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C01-Cg-z30">
+                                            <rect key="frame" x="0.0" y="1.6666666666666643" width="175" height="47"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="47Q-oH-4bH"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Folder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmW-mI-Fos">
+                                            <rect key="frame" x="0.0" y="58" width="175" height="20"/>
+                                            <fontDescription key="fontDescription" name="PFHandbookPro-Bold" family="PF Handbook Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xHb-qC-mMA">
+                                    <rect key="frame" x="175" y="0.0" width="175" height="78"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WSZ-44-isn">
+                                            <rect key="frame" x="0.0" y="1.6666666666666643" width="175" height="47"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-UL-ASH">
+                                            <rect key="frame" x="0.0" y="58" width="175" height="20"/>
+                                            <fontDescription key="fontDescription" name="PFHandbookPro-Bold" family="PF Handbook Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aLA-4v-gLa">
+                                    <rect key="frame" x="350" y="0.0" width="0.0" height="78"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zat-8V-jbd">
+                                            <rect key="frame" x="0.0" y="1" width="0.0" height="47.666666666666671"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCv-Ql-f65">
+                                            <rect key="frame" x="0.0" y="58" width="0.0" height="20"/>
+                                            <fontDescription key="fontDescription" name="PFHandbookPro-Bold" family="PF Handbook Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="zat-8V-jbd" firstAttribute="height" secondItem="C01-Cg-z30" secondAttribute="height" id="759-Kt-ijW"/>
+                                <constraint firstItem="WSZ-44-isn" firstAttribute="height" secondItem="C01-Cg-z30" secondAttribute="height" id="VaQ-cN-Ath"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfZ-YE-EgY">
+                            <rect key="frame" x="20" y="50" width="175" height="78"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="btnFolderCLK:" destination="-1" eventType="touchUpInside" id="Uqy-q4-AIO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6V-Ts-dxy">
+                            <rect key="frame" x="195" y="50" width="175" height="78"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="btnGalleryCLK:" destination="-1" eventType="touchUpInside" id="Q0R-7p-MGA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAx-QW-62n">
+                            <rect key="frame" x="370" y="50" width="0.0" height="78"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="btnCameraCLK:" destination="-1" eventType="touchUpInside" id="393-Iz-Rh7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="w6Y-P0-rnh" firstAttribute="top" secondItem="kqX-zt-6Da" secondAttribute="bottom" constant="10" id="0Rm-K2-Edb"/>
+                        <constraint firstItem="DfZ-YE-EgY" firstAttribute="trailing" secondItem="cfU-4J-6TG" secondAttribute="trailing" id="0b8-nv-HTd"/>
+                        <constraint firstAttribute="trailing" secondItem="w6Y-P0-rnh" secondAttribute="trailing" constant="20" id="3zK-xG-9wE"/>
+                        <constraint firstItem="DAx-QW-62n" firstAttribute="trailing" secondItem="aLA-4v-gLa" secondAttribute="trailing" id="C1c-dO-4BS"/>
+                        <constraint firstItem="w6Y-P0-rnh" firstAttribute="leading" secondItem="5li-0t-Mwy" secondAttribute="leading" constant="20" id="MZR-O9-rlG"/>
+                        <constraint firstItem="DAx-QW-62n" firstAttribute="bottom" secondItem="aLA-4v-gLa" secondAttribute="bottom" id="WGV-DC-WM8"/>
+                        <constraint firstItem="DfZ-YE-EgY" firstAttribute="top" secondItem="cfU-4J-6TG" secondAttribute="top" id="XNn-CV-1MJ"/>
+                        <constraint firstItem="w6Y-P0-rnh" firstAttribute="top" secondItem="5li-0t-Mwy" secondAttribute="top" constant="50" id="Zjo-kW-z0x"/>
+                        <constraint firstItem="E6V-Ts-dxy" firstAttribute="trailing" secondItem="xHb-qC-mMA" secondAttribute="trailing" id="aPB-GQ-z4p"/>
+                        <constraint firstItem="DAx-QW-62n" firstAttribute="top" secondItem="aLA-4v-gLa" secondAttribute="top" id="amc-Np-GDe"/>
+                        <constraint firstItem="E6V-Ts-dxy" firstAttribute="bottom" secondItem="xHb-qC-mMA" secondAttribute="bottom" id="cI7-HG-dva"/>
+                        <constraint firstItem="DAx-QW-62n" firstAttribute="leading" secondItem="aLA-4v-gLa" secondAttribute="leading" id="cVx-II-7yg"/>
+                        <constraint firstItem="E6V-Ts-dxy" firstAttribute="top" secondItem="xHb-qC-mMA" secondAttribute="top" id="jg9-QT-lsk"/>
+                        <constraint firstItem="DfZ-YE-EgY" firstAttribute="leading" secondItem="cfU-4J-6TG" secondAttribute="leading" id="nE0-4f-EkF"/>
+                        <constraint firstItem="kqX-zt-6Da" firstAttribute="leading" secondItem="w6Y-P0-rnh" secondAttribute="leading" id="nGP-jm-hzq"/>
+                        <constraint firstItem="kqX-zt-6Da" firstAttribute="trailing" secondItem="w6Y-P0-rnh" secondAttribute="trailing" id="ndC-Ne-PJR"/>
+                        <constraint firstItem="kqX-zt-6Da" firstAttribute="top" secondItem="5li-0t-Mwy" secondAttribute="top" constant="10" id="qWM-f1-GwV"/>
+                        <constraint firstItem="DfZ-YE-EgY" firstAttribute="bottom" secondItem="cfU-4J-6TG" secondAttribute="bottom" id="srY-jB-Wxs"/>
+                        <constraint firstItem="E6V-Ts-dxy" firstAttribute="leading" secondItem="xHb-qC-mMA" secondAttribute="leading" id="vfu-zV-m8R"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vmb-8O-jYi" secondAttribute="trailing" id="6jG-IZ-oby"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="w6Y-P0-rnh" secondAttribute="bottom" constant="20" id="BN2-7V-ca9"/>
+                <constraint firstAttribute="bottom" secondItem="vmb-8O-jYi" secondAttribute="bottom" id="EQJ-bb-FJl"/>
+                <constraint firstAttribute="bottom" secondItem="5li-0t-Mwy" secondAttribute="bottom" id="F3D-Fc-277"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BYg-ca-oIH" secondAttribute="trailing" id="T1y-GA-TmM"/>
+                <constraint firstItem="BYg-ca-oIH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZGB-iT-iqC"/>
+                <constraint firstItem="5li-0t-Mwy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dMb-sK-Oio"/>
+                <constraint firstItem="BYg-ca-oIH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fBZ-2u-Li0"/>
+                <constraint firstAttribute="trailing" secondItem="5li-0t-Mwy" secondAttribute="trailing" id="oCi-ld-1HV"/>
+                <constraint firstItem="vmb-8O-jYi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pZj-sd-2ty"/>
+                <constraint firstItem="vmb-8O-jYi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qi7-Vt-O1o"/>
+                <constraint firstItem="5li-0t-Mwy" firstAttribute="top" secondItem="BYg-ca-oIH" secondAttribute="bottom" id="t5P-8j-8Fq"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="folder.fill" catalog="system" width="128" height="96"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module AssetsPickerViewController {
+  umbrella header "AssetsPickerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

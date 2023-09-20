@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PFEncoreSansPro-Book.ttf">
+            <string>PFEncoreSansPro-Book</string>
+        </array>
+        <array key="PFEncoreSansPro-Regular.ttf">
+            <string>PFEncoreSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UploadingDocCell" rowHeight="80" id="KGk-i7-Jjw" customClass="UploadingDocCell" customModule="PUMultiFileUploader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DX-Da-ZXU">
+                        <rect key="frame" x="0.0" y="0.0" width="425" height="80"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaH-QT-wOm">
+                                <rect key="frame" x="20" y="10" width="385" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nIb-3v-bMy">
+                                        <rect key="frame" x="10" y="10" width="365" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rni-Rt-2Qd">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="docUpload" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-rB-M1j">
+                                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="jRe-pB-6uu"/>
+                                                            <constraint firstAttribute="width" constant="20" id="jcf-c6-JUR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8ih-rB-M1j" firstAttribute="centerX" secondItem="Rni-Rt-2Qd" secondAttribute="centerX" id="8un-zA-7N3"/>
+                                                    <constraint firstItem="8ih-rB-M1j" firstAttribute="centerY" secondItem="Rni-Rt-2Qd" secondAttribute="centerY" id="b61-rf-boM"/>
+                                                    <constraint firstAttribute="width" constant="40" id="oys-k7-y82"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-jf-v50">
+                                                <rect key="frame" x="45" y="0.0" width="275" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aadhar.pdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAS-hI-mQK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="20"/>
+                                                        <fontDescription key="fontDescription" name="PFEncoreSansPro-Regular" family="PF Encore Sans Pro" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWy-1H-RRe">
+                                                        <rect key="frame" x="0.0" y="20" width="275" height="20"/>
+                                                        <fontDescription key="fontDescription" name="PFEncoreSansPro-Book" family="PF Encore Sans Pro" pointSize="10"/>
+                                                        <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-J8-lOR">
+                                                <rect key="frame" x="325" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="aWo-qj-lkS"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="reUpload"/>
+                                                <state key="selected" image="closeIcon"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hli-ED-QX3">
+                                        <rect key="frame" x="0.0" y="56" width="385" height="4"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.96862745100000003" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="progressTintColor" red="0.96862745100000003" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hli-ED-QX3" secondAttribute="bottom" id="2iI-Ce-cw7"/>
+                                    <constraint firstItem="nIb-3v-bMy" firstAttribute="top" secondItem="xaH-QT-wOm" secondAttribute="top" constant="10" id="cWa-XP-64f"/>
+                                    <constraint firstItem="nIb-3v-bMy" firstAttribute="leading" secondItem="xaH-QT-wOm" secondAttribute="leading" constant="10" id="gjk-aQ-dmR"/>
+                                    <constraint firstAttribute="height" constant="60" id="kSg-oA-IBl"/>
+                                    <constraint firstItem="Hli-ED-QX3" firstAttribute="leading" secondItem="xaH-QT-wOm" secondAttribute="leading" id="t1u-0r-SCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hli-ED-QX3" secondAttribute="trailing" id="tSD-JS-RV5"/>
+                                    <constraint firstAttribute="bottom" secondItem="nIb-3v-bMy" secondAttribute="bottom" constant="10" id="v5D-uX-Nof"/>
+                                    <constraint firstAttribute="trailing" secondItem="nIb-3v-bMy" secondAttribute="trailing" constant="10" id="xrj-lE-MgG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xaH-QT-wOm" firstAttribute="leading" secondItem="4DX-Da-ZXU" secondAttribute="leading" constant="20" id="FTL-E1-z7O"/>
+                            <constraint firstAttribute="trailing" secondItem="xaH-QT-wOm" secondAttribute="trailing" constant="20" id="iQB-XA-aie"/>
+                            <constraint firstItem="xaH-QT-wOm" firstAttribute="top" secondItem="4DX-Da-ZXU" secondAttribute="top" constant="10" id="qHQ-KD-xtc"/>
+                            <constraint firstAttribute="bottom" secondItem="xaH-QT-wOm" secondAttribute="bottom" constant="10" id="sUe-sy-mMk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4DX-Da-ZXU" secondAttribute="trailing" id="2gM-Zx-WAW"/>
+                    <constraint firstItem="4DX-Da-ZXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8ig-et-nWG"/>
+                    <constraint firstAttribute="bottom" secondItem="4DX-Da-ZXU" secondAttribute="bottom" id="MI9-ng-eAu"/>
+                    <constraint firstItem="4DX-Da-ZXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gw7-kB-oFk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnReUploading" destination="lnX-J8-lOR" id="q6Y-U6-G7c"/>
+                <outlet property="imgSelected" destination="8ih-rB-M1j" id="BHn-qp-Otu"/>
+                <outlet property="lblDocname" destination="sAS-hI-mQK" id="lYO-Ax-lso"/>
+                <outlet property="lblStatus" destination="DWy-1H-RRe" id="Ff7-az-YSY"/>
+                <outlet property="uploadProgress" destination="Hli-ED-QX3" id="KrL-cB-MzZ"/>
+            </connections>
+            <point key="canvasLocation" x="211.53846153846152" y="-2.8436018957345972"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="closeIcon" width="20" height="20"/>
+        <image name="docUpload" width="52.666667938232422" height="50.333332061767578"/>
+        <image name="reUpload" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
