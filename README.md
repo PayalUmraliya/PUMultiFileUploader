@@ -6,6 +6,10 @@ Introducing `PUMultiFileUploader`: For handling upload multiple files and for ev
 
 ![Output](https://i.postimg.cc/5yfCq4BW/Screenshot-2023-09-20-at-1-44-17-PM.png)
 
+## Notes
+
+In this demo you need to add upload api header data and upload api url to test the app.
+
 ## License
 
 The MIT License (MIT)
